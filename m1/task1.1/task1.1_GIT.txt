@@ -1,0 +1,15 @@
+﻿fe6bf11 (HEAD -> main, origin/main, origin/develop, origin/HEAD, develop) HEAD@{0}: merge develop: Fast-forward
+4e09a7d HEAD@{1}: checkout: moving from develop to main
+fe6bf11 (HEAD -> main, origin/main, origin/develop, origin/HEAD, develop) HEAD@{2}: checkout: moving from styles to develop
+a14966e (origin/styles, styles) HEAD@{3}: checkout: moving from develop to styles
+fe6bf11 (HEAD -> main, origin/main, origin/develop, origin/HEAD, develop) HEAD@{4}: merge images: Merge made by the 'recursive' strategy.
+a14966e (origin/styles, styles) HEAD@{5}: checkout: moving from styles to develop
+a14966e (origin/styles, styles) HEAD@{6}: checkout: moving from develop to styles
+a14966e (origin/styles, styles) HEAD@{7}: commit: add styles
+7815b69 HEAD@{8}: checkout: moving from images to develop
+6a6a5f1 (origin/images, images) HEAD@{9}: commit: add photo
+7815b69 HEAD@{10}: checkout: moving from develop to images
+7815b69 HEAD@{11}: commit: add file index
+4e09a7d HEAD@{12}: checkout: moving from main to develop
+4e09a7d HEAD@{13}: commit: add file readme
+86b1fac HEAD@{14}: clone: from https://github.com/sashazui/DevOps_online_Poltava_2021Q4.git
