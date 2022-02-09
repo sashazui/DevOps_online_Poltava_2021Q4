@@ -1,1 +1,1 @@
-# DevOps_online_Poltava_2021Q4
+# DevOps_online_Kharkiv_2021Q4
