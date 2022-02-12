@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('all repository') {
             steps {
-                sh "cd /Final_project_DevOps_online_Kharkiv_2021Q4  | ls -la "
+                sh "ls -la"
                 echo "Building......."
                 echo "End of Stage Build"
             }
