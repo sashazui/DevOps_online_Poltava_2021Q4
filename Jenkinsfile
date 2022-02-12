@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Archive files') {
             steps {
-                sh "tar cvzf index.tar /home/oleksandr/git/DevOps_online_Poltava_2021Q4/Final_project_DevOps_online_Kharkiv_2021Q4/index.html"
+                sh "tar cf index.tar /home/oleksandr/git/DevOps_online_Poltava_2021Q4/Final_project_DevOps_online_Kharkiv_2021Q4/index.html"
                 echo "Done"
             }
         }
