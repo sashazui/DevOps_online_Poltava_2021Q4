@@ -5,6 +5,7 @@ pipeline {
         stage('Clone repository') {
             steps {
                 echo "Done"
+                sh "ls -la"   
             }
         }
         stage('Archive files') {
