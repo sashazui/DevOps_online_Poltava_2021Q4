@@ -2,15 +2,25 @@ pipeline {
     agent any
 
     stages {
-        stage('Clone repository') {
+        stage('1-Build') {
             steps {
-                echo "Done"
+                echo "Start of Stage Build"
+                echo "Building......."
+                echo "End of Stage Build"
             }
         }
-        stage('Archive files') {
+        stage('2-Test') {
             steps {
-                sh "tar cf index.tar /home/oleksandr/git/DevOps_online_Poltava_2021Q4/Final_project_DevOps_online_Kharkiv_2021Q4/index.html"
-                echo "Done"
+                echo "Start of Stage Test"
+                echo "Testing......."
+                echo "End of Stage Build"
+            }
+        }
+        stage('3-Deploy') {
+            steps {
+                echo "Start of Stage Deploy"
+                echo "Deploying......."
+                echo "End of Stage Build"
             }
         }
     }
