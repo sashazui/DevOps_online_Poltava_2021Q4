@@ -4,8 +4,24 @@ pipeline {
     stages {
         stage('Clone repository') {
             steps {
-                echo "Done"
-                sh "ls -la"   
+                echo "Done"   
+            }
+        }
+    stages {
+        stage('Test') {
+            steps {
+		echo "Test"
+                sh "result=`grep "Hello" /Final_project_DevOps_online_Kharkiv_2021Q4/index.html | wc -1` "
+		echo $result
+		sh " if [ "$result"="1" ]"
+		sh "then"
+		echo "Test passed"
+		sh "exit 0"
+		sh "else"
+		echo "Test failed"
+		sh "exit 1"
+		sh "fi"
+		echo "Test Finished"   
             }
         }
         stage('Archive files') {
