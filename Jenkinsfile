@@ -12,7 +12,7 @@ pipeline {
 		echo "Test"
                 sh "result=grep "Hello" /Final_project_DevOps_online_Kharkiv_2021Q4/index.html | wc -1"
 		echo $result
-		if ["$result"="1"]
+		if "$result"="1"
 		then
 		echo "Test passed"
 		exit
