@@ -10,16 +10,16 @@ pipeline {
         stage('Test') {
             steps {
 		echo "Test"
-                sh "result=`grep "Hello" /Final_project_DevOps_online_Kharkiv_2021Q4/index.html | wc -1` "
+                result=`grep "Hello" /Final_project_DevOps_online_Kharkiv_2021Q4/index.html | wc -1` 
 		echo $result
-		sh " if [ "$result"="1" ]"
-		sh "then"
+		if [ "$result"="1" ]
+		then
 		echo "Test passed"
-		sh "exit 0"
-		sh "else"
+		exit
+		else
 		echo "Test failed"
-		sh "exit 1"
-		sh "fi"
+		exit 1
+		fi
 		echo "Test Finished"   
             }
         }
